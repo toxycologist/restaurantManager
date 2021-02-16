@@ -41,11 +41,11 @@ public class WorkerManager {
 
     @EventListener(ApplicationReadyEvent.class)
     public void fillDB(){
-        save(new Worker("Marcin", "Kiepura", LocalDate.of(1994, 6, 1), 21, Role.LIDER));
-        save(new Worker("Piotr", "Wierzbicki", LocalDate.of(1974, 1, 9), 25, Role.MANAGER));
-        save(new Worker("Piotr", "Broniszewski", LocalDate.of(1992, 11, 21), 22, Role.LIDER));
-        save(new Worker("Damian", "Dawiskiba", LocalDate.of(1995, 3, 12), 23, Role.LIDER));
-        save(new Worker("Karolina", "Skalik", LocalDate.of(1993, 5, 12), 20, Role.BARMAN));
+        save(new Worker(1L, "Marcin", "Kiepura", LocalDate.of(1994, 6, 1), 21, Role.LIDER));
+        save(new Worker(2L, "Piotr", "Wierzbicki", LocalDate.of(1974, 1, 9), 25, Role.MANAGER));
+        save(new Worker(3L, "Piotr", "Broniszewski", LocalDate.of(1992, 11, 21), 22, Role.LIDER));
+        save(new Worker(4L, "Damian", "Dawiskiba", LocalDate.of(1995, 3, 12), 23, Role.LIDER));
+        save(new Worker(5L, "Karolina", "Skalik", LocalDate.of(1993, 5, 12), 20, Role.BARMAN));
     }
 
 
