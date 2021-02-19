@@ -1,6 +1,7 @@
 package pl.manager.restaurant;
 
 
+import com.vaadin.flow.router.Route;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pl.manager.restaurant.Entity.Worker;
@@ -19,7 +20,7 @@ public class WorkerApi {
     }
 
     @GetMapping("/all")
-    public Iterable<Worker> getAll() {
+        public Iterable<Worker> getAll() {
         return workers.findAll();
     }
 

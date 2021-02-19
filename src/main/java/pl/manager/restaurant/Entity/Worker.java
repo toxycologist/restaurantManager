@@ -26,5 +26,15 @@ public class Worker {
     @Enumerated(EnumType.STRING)
     private Role role;
 
-
+    @Override
+    public String toString() {
+        return "Worker{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", birthDay=" + birthDay +
+                ", perHour=" + perHour +
+                ", role=" + role +
+                '}';
+    }
 }
