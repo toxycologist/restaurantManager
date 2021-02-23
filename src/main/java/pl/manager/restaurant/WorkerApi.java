@@ -1,10 +1,9 @@
 package pl.manager.restaurant;
 
 
-import com.vaadin.flow.router.Route;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import pl.manager.restaurant.Entity.Worker;
+import pl.manager.restaurant.entity.Worker;
 import java.util.Optional;
 
 @RestController
