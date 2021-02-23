@@ -39,9 +39,9 @@ public class AddWorkerGui extends VerticalLayout {
 
         Dialog dialogAddedWorker = new Dialog();
         dialogAddedWorker.setCloseOnEsc(false);
-        dialogAddedWorker.setCloseOnOutsideClick(false);
+        dialogAddedWorker.setCloseOnOutsideClick(true);
         Span messageOK = new Span("Dodano nowego pracownika!   ");
-        Button confirmButton = new Button("Ok najs!", event -> {
+        Button confirmButton = new Button("OK!", event -> {
                         dialogAddedWorker.close();
         });
         dialogAddedWorker.add(messageOK, confirmButton);
